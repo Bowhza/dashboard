@@ -45,9 +45,18 @@ html, body {
     grid-template-columns: 1fr 275px;
     grid-template-rows: 1fr 1fr;
     padding-bottom: 25px;
+    
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+
+.main-content::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
 }
 
 /*Header Contents*/
+
 #header-top {
     display: grid;
     grid-template-columns: 2fr 1fr;
