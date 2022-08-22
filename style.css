@@ -23,6 +23,7 @@ html, body {
 }
 
 .header {
+    grid-template-rows: 1fr 1fr;
     display: grid;
     grid-column: 2 / 3;
     box-shadow: black 0px 3px 10px;
@@ -45,7 +46,100 @@ html, body {
 
 /*Header Contents*/
 #header-top {
-    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+#search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0px 25px;
+}
+
+#search input {
+    flex: 1;
+    height: 25px;
+    border: none;
+    background-color: var(--light-grey);
+    border-radius: 15px;
+    font-size: 1.1rem;
+}
+
+#search input:focus {
+    outline: none;
+    padding-left: 10px;
+}
+
+#profile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: bold;
+    gap: 25px;
+    padding-right: 25px;
+}
+
+#profile-img {
+    height: 40px;
+    border-radius: 25px;
+}
+
+#header-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#profile-img-2 {
+    height: 50px;
+    border-radius: 30px;
+}
+
+#user-greet {
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    gap: 15px;
+    justify-self: left;
+}
+
+#greeting {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#greeting p {
+    margin: 0;
+    font-weight: bold;
+}
+
+#greeting-top {
+    font-size: 0.8rem;
+}
+
+#greeting-user {
+    font-size: 1.2rem;
+}
+
+#button-container {
+    display: flex;
+    justify-content: right;
+    gap: 25px;
+    align-items: center;
+    padding: 0 25px;
+}
+
+#button-container button {
+    border: none;
+    height: 30px;
+    width: 75px;
+    border-radius: 15px;
+    background-color: var(--sky-blue);
+    color: white;
+    font-weight: bold;
 }
 
 
@@ -57,6 +151,7 @@ html, body {
     grid-template-columns: 50px 1fr;
     justify-items: left;
     align-content: center;
+    user-select: none;
 }
 
 #sidebar-middle, #sidebar-bottom {
@@ -65,6 +160,7 @@ html, body {
     gap: 15px;
     margin-left: 20px;
     justify-content: center;
+    user-select: none;
 }
 
 #sidebar-middle div, #sidebar-bottom div {
@@ -72,6 +168,10 @@ html, body {
     align-items: center;
     gap: 10px;
     font-size: 18px;
+}
+
+#sidebar-middle div:hover, #sidebar-bottom div:hover {
+    text-shadow: 0px 1px 10px;
 }
 
 #sidebar h2 {
