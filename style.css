@@ -43,7 +43,7 @@ html, body {
     display: grid;
     background-color: var(--light-grey);
     grid-template-columns: 1fr 275px;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     padding-bottom: 25px;
     
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
@@ -60,7 +60,6 @@ html, body {
 #header-top {
     display: grid;
     grid-template-columns: 2fr 1fr;
-
 }
 
 #search {
@@ -235,6 +234,14 @@ html, body {
     gap: 20px;
 }
 
+/* Right Side Container */
+
+#right-side-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 #announcements, #trending {
     display: flex;
     flex-direction: column;
@@ -246,10 +253,10 @@ html, body {
     flex-direction: column;
     justify-content: space-between;
     background-color: white;
-    flex: 1;
     padding: 25px;
     gap: 15px;
     border-radius: 7px;
+    height: 275px;
 }
 
 .announcement-card {
